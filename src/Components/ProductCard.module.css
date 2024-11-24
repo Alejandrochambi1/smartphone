@@ -1,0 +1,280 @@
+.card {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  box-sizing: border-box;
+  border-radius: 14px;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  z-index: 2;
+  background: rgba(42, 42, 42, .95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid #7241ff;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #7241ff;
+  opacity: 0.8;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.1); }
+}
+
+.cardContent {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.cardImgLink {
+  width: 100%;
+  height: 200px;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cardImgLink:hover .cardImg {
+  transform: scale(1.05);
+}
+
+.cardInfo {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.productLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.textTitle {
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.3;
+  color: #00ff00;
+  margin-bottom: 10px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.textBodyWrapper {
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.textBody {
+  font-size: 0.9em;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.textBody::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 1.5em;
+  background: linear-gradient(to bottom, transparent, rgba(42, 42, 42, 0.95));
+}
+
+.cardFooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #7241ff;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.currentPrice {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #00ff00;
+}
+
+.originalPrice {
+  font-size: 0.9em;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.inStock {
+  font-size: 0.8em;
+  color: #00ff00;
+}
+
+.outOfStock {
+  font-size: 0.8em;
+  color: #ff3e3e;
+}
+
+.cardButton {
+  background: none;
+  border: 1px solid #7241ff;
+  display: flex;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.cardButton:hover:not(:disabled) {
+  border-color: #00ff00;
+  background-color: #00ff00;
+}
+
+.cardButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.svgIcon {
+  width: 20px;
+  height: 20px;
+  fill: #7241ff;
+  transition: fill 0.3s ease;
+}
+
+.cardButton:hover:not(:disabled) .svgIcon {
+  fill: #1c1c1c;
+}
+
+.detailsLink {
+  margin-top: 15px;
+  color: #7241ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.detailsLink:hover {
+  color: #00ff00;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: 400px;
+  }
+
+  .cardImgLink {
+    height: 180px;
+  }
+
+  .textTitle {
+    font-size: 1.1em;
+  }
+
+  .textBody {
+    font-size: 0.8em;
+  }
+
+  .currentPrice {
+    font-size: 1.1em;
+  }
+
+  .originalPrice {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    height: 380px;
+  }
+
+  .cardImgLink {
+    height: 160px;
+  }
+
+  .textTitle {
+    font-size: 1em;
+  }
+
+  .textBody {
+    font-size: 0.75em;
+  }
+
+  .currentPrice {
+    font-size: 1em;
+  }
+
+  .originalPrice {
+    font-size: 0.75em;
+  }
+}

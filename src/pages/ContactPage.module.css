@@ -1,0 +1,88 @@
+.contactPage {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.title {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.formInput {
+  border-radius: 20px;
+  border: 1px solid #c0c0c0;
+  outline: 0 !important;
+  box-sizing: border-box;
+  padding: 12px 15px;
+}
+
+.submitButton {
+  padding: 10px 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: teal;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #00796b;
+  transform: translateY(-2px);
+}
+
+.submitButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.buttonIcon {
+  margin-right: 8px;
+}
+
+.contactInfo {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contactList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contactList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  margin-right: 10px;
+  color: teal;
+}
+
+.map {
+  margin-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .contactInfo {
+    margin-top: 2rem;
+  }
+}

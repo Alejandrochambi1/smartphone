@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+
+.footer {
+  background: linear-gradient(135deg, #1c1c1c 0%, #2a2a2a 100%);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.brandName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.gradientText {
+  background: linear-gradient(to right, #7241ff, #00ff00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.tagline {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.linkGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.footerLink {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
+}
+
+.socialCol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  border-radius: 50%;
+  border: 2px solid #7241ff;
+}
+
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+.containerThree:hover {
+  background-color: #3b5998;
+  transition-duration: .3s;
+}
+
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.buttonpro {
+  --btn-default-bg: #1c1c1c;
+  --btn-padding: 10px 15px;
+  --btn-hover-bg: #444444;
+  --btn-transition: 0.3s;
+  --btn-letter-spacing: 0.1rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 255, 0, 0.3);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #00ff00;
+  --default-btn-color: #fff;
+  --font-size: 16px;
+  --font-weight: 600;
+  --font-family: "Orbitron", sans-serif;
+
+  box-sizing: border-box;
+  padding: var(--btn-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-btn-color);
+  font: var(--font-weight) var(--font-size) var(--font-family);
+  background: var(--btn-default-bg);
+  cursor: pointer;
+  transition: var(--btn-transition);
+  overflow: hidden;
+  box-shadow: var(--btn-shadow);
+  border-radius: 6em;
+  border: 2px solid #7241ff;
+}
+
+.buttonpro span {
+  letter-spacing: var(--btn-letter-spacing);
+  transition: var(--btn-transition);
+  box-sizing: border-box;
+  position: relative;
+  background: inherit;
+}
+
+.buttonpro span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+}
+
+.buttonpro:hover,
+.buttonpro:focus {
+  background: var(--btn-hover-bg);
+  box-shadow: 0px 0px 10px 0px rgba(114, 65, 255, 0.7);
+  border: 2px solid #00ff00;
+}
+
+.buttonpro:hover span,
+.buttonpro:focus span {
+  color: var(--hover-btn-color);
+}
+
+.buttonpro:hover span::before,
+.buttonpro:focus span::before {
+  animation: chitchat linear both var(--btn-animation-duration);
+}
+
+@keyframes chitchat {
+  0% {
+    content: "#";
+  }
+
+  5% {
+    content: ".";
+  }
+
+  10% {
+    content: "^{";
+  }
+
+  15% {
+    content: "-!";
+  }
+
+  20% {
+    content: "#$_";
+  }
+
+  25% {
+    content: "№:0";
+  }
+
+  30% {
+    content: "#{+.";}35%{content: "@}-?";
+  }
+
+  40% {
+    content: "?{4@%";
+  }
+
+  45% {
+    content: "=.,^!";
+  }
+
+  50% {
+    content: "?2@%";
+  }
+
+  55% {
+    content: "\;1}]";
+  }
+
+  60% {
+    content: "?{%:%";
+    right: 0;
+  }
+
+  65% {
+    content: "|{f[4";
+    right: 0;
+  }
+
+  70% {
+    content: "{4%0%";
+    right: 0;
+  }
+
+  75% {
+    content: "'1_0<";
+    right: 0;
+  }
+
+  80% {
+    content: "{0%";
+    right: 0;
+  }
+
+  85% {
+    content: "]>'";
+    right: 0;
+  }
+
+  90% {
+    content: "4";
+    right: 0;
+  }
+
+  95% {
+    content: "2";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .socialCol {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .brandName {
+    text-align: center;
+  }
+
+  .tagline {
+    text-align: center;
+  }
+
+  .linkGrid {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card {
+    justify-content: center;
+  }
+}

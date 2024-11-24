@@ -1,0 +1,32 @@
+.categoryPage {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #1c1c1c;
+  min-height: 100vh;
+  overflow-y: auto; /* Permitir desplazamiento vertical */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #7241ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-column {
+  max-width: 100%; /* No permitir que la columna se pase del tamaño asignado */
+  overflow: hidden; /* Esconde cualquier contenido que se desborde */
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 2rem;
+  }
+}

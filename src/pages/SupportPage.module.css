@@ -1,0 +1,80 @@
+.supportPage {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #1c1c1c;
+    color: white;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #7241ff;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: #00ff00;
+    margin-bottom: 1.5rem;
+  }
+  
+  .faqAccordion {
+    margin-bottom: 2rem;
+  }
+  
+  .faqAccordion .accordion-button {
+    background-color: #2a2a2a;
+    color: white;
+  }
+  
+  .faqAccordion .accordion-button:not(.collapsed) {
+    background-color: #7241ff;
+    color: white;
+  }
+  
+  .faqAccordion .accordion-body {
+    background-color: #2a2a2a;
+    color: white;
+  }
+  
+  .contactForm {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactForm .form-label {
+    color: #00ff00;
+  }
+  
+  .contactForm .form-control {
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid #7241ff;
+  }
+  
+  .submitButton {
+    background: linear-gradient(135deg, #7241ff 0%, #00ff00 100%);
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(114, 65, 255, 0.3);
+  }
+  
+  @media (max-width: 767px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .sectionTitle {
+      font-size: 1.75rem;
+    }
+  
+    .contactForm {
+      padding: 1.5rem;
+    }
+  }

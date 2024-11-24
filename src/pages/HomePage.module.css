@@ -1,0 +1,308 @@
+.homePage {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.mainCarousel {
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.carouselImageContainer {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carouselCaption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.carouselCaption h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #7241ff;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.ctaButton:hover {
+  background-color: #00ff00;
+  color: #1c1c1c;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
+}
+
+.sectionTitle {
+  color: #7241ff;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #00ff00;
+}
+
+.featuredProducts {
+  padding: 3rem 0;
+}
+
+.brandsShowcase {
+  background-color: #2a2a2a;
+  padding: 3rem 0;
+}
+
+.brandLogosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.brandLogoWrapper {
+  flex: 0 0 calc(16.666% - 2rem);
+  max-width: calc(16.666% - 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.brandLogoWrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(114, 65, 255, 0.3);
+}
+
+.brandLogo {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%) brightness(200%);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.brandLogoWrapper:hover .brandLogo {
+  filter: grayscale(0%) brightness(100%);
+}
+
+.brandButton {
+  display: inline-block;
+  background-color: #7241ff;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.brandButton:hover {
+  background-color: #00ff00;
+  color: #1c1c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 255, 0, 0.3);
+}
+
+.qualitySection {
+  padding: 3rem 0;
+}
+
+.qualityContent {
+  display: flex;
+  align-items: center;
+}
+
+.qualityDescription {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.qualityImageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(114, 65, 255, 0.5);
+}
+
+.qualityImage {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.qualityImageWrapper:hover .qualityImage {
+  transform: scale(1.05);
+}
+
+.learnMoreButton {
+  background-color: #7241ff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.learnMoreButton:hover {
+  background-color: #00ff00;
+  color: #1c1c1c;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
+}
+
+.viewAllBrands {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.viewAllBrands .ctaButton {
+  font-size: 1rem;
+  padding: 12px 24px;
+}
+
+@media (max-width: 1200px) {
+  .carouselCaption {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 991px) {
+  .carouselImageContainer {
+    height: 60vh;
+  }
+
+  .carouselCaption {
+    max-width: 70%;
+  }
+
+  .carouselCaption h2 {
+    font-size: 1.4rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.2rem;
+  }
+
+  .brandLogoWrapper {
+    flex: 0 0 calc(25% - 2rem);
+    max-width: calc(25% - 2rem);
+  }
+
+  .qualityContent {
+    flex-direction: column;
+  }
+
+  .qualityImageWrapper {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .carouselImageContainer {
+    height: 50vh;
+  }
+
+  .carouselCaption {
+    max-width: 80%;
+    bottom: 5%;
+  }
+
+  .carouselCaption h2 {
+    font-size: 1.2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .ctaButton {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .brandLogoWrapper {
+    flex: 0 0 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+  }
+}
+
+@media (max-width: 575px) {
+  .carouselImageContainer {
+    height: 40vh;
+  }
+
+  .carouselCaption {
+    max-width: 90%;
+    bottom: 5%;
+    padding: 10px;
+  }
+
+  .carouselCaption h2 {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  .brandLogoWrapper {
+    flex: 0 0 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,70 @@
+.aboutPage {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #1c1c1c;
+    color: white;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #7241ff;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #00ff00;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: #7241ff;
+    margin-bottom: 1.5rem;
+  }
+  
+  .aboutImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .valueCard {
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #2a2a2a;
+    color: white;
+    border: 2px solid #7241ff;
+  }
+  
+  .valueCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(114, 65, 255, 0.3);
+  }
+  
+  .valueIcon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00ff00;
+  }
+  
+  @media (max-width: 767px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .sectionTitle {
+      font-size: 1.75rem;
+    }
+  
+    .aboutImage {
+      margin-top: 2rem;
+    }
+  }
